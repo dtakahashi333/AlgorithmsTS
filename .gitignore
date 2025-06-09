@@ -1,0 +1,38 @@
+# Node.js dependencies
+node_modules/
+
+# Output directories
+dist/
+build/
+
+# TypeScript
+*.tsbuildinfo
+
+# Logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Environment files
+.env
+.env.*
+
+# Jest
+coverage/
+jest.cache/
+
+# VSCode settings
+.vscode/
+
+# Mac system files
+.DS_Store
+
+# OS / Editor specific
+*.swp
+*.swo
+*.log
+.idea/
+*.iml
+
+# Lint cache
+.eslintcache
