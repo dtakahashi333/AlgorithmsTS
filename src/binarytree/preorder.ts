@@ -9,11 +9,10 @@ export function preorderIter<T>(root: TreeNode<T> | null): void {
 
   while (true) {
     if (curr === null) {
+      if (stack.length === 0) break;
       curr = stack.pop() || null;
       if (curr) {
         curr = curr.right;
-      } else {
-        break;
       }
     } else {
       console.log(curr.value);
@@ -21,4 +20,15 @@ export function preorderIter<T>(root: TreeNode<T> | null): void {
       curr = curr.left;
     }
   }
+}
+
+export function preorderRecur<T>(root: TreeNode<T> | null) {
+  preorderRecurHelper(root);
+}
+
+function preorderRecurHelper<T>(node: TreeNode<T> | null) {
+  if (node === null) return;
+  console.log(node.value);
+  preorderRecurHelper(node.left);
+  preorderRecurHelper(node.right);
 }
