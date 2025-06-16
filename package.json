@@ -4,7 +4,7 @@
   "scripts": {
     "lint": "eslint ./src --ext .ts,.tsx",
     "build": "tsc",
-    "test": "jest"
+    "test": "jest src/ --verbose"
   },
   "keywords": [],
   "author": "Daisuke Takahashi",
